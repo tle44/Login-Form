@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+      <!--Login form-->
+        <form class = "form form-hidden" id="login">
+
+            <h1 class = "form_title">Login</h1>
+            <div class = "form_message form_message-error"></div>
+
+            <div class="form_input-group">
+                 <input class = "form_input" type = "text" autofocus placeholder = "Enter username or email" > </input>
+                 <div class ="form_input-error-message"></div>
+            </div>
+
+            <div class="form_input-group">
+                <input class = "form_input" type = "password"  placeholder = "Enter password" ></input> 
+                <div class ="form_input-error-message"></div>
+            </div>
+            
+            <button class ="form_button" type = "submit">Continue</button>
+
+
+            <p class = "form_text"><a href="#" class = "form_link" >Forgot your password?</a></p>
+            <p class = "form_text"><a href = "#" class = "form_link" id ="linkCreateAccount">Don't have an account? Create an account</a></p>
+
+        </form>
+
+        <!--Create account form-->
+        <form class = "form " id="createAccount">
+            <h1 class = "form_title">Create Account</h1>
+            <div class = "form_message form_message-error"></div>
+
+            <div class="form_input-group">
+                 <input class = "form_input" type = "text" autofocus placeholder = "Create username" > </input>
+                 <div class ="form_input-error-message"></div>
+                 <div class ="form_input-success-message"></div>
+            </div>
+            <div class="form_input-group">
+                <input class = "form_input"type = "text" autofocus placeholder = "Enter email address" > </input>
+                <div class ="form_input-error-message"></div>
+           </div>
+
+            <div class="form_input-group">
+                <input class = "form_input" id = "createPassword"type = "password"  placeholder = "Create password" onInput= "checkPasswork()"></input> 
+                <div class ="form_input-error-message"></div>
+                <div class ="form_input-success-message"></div>
+            </div>
+        
+            <div class="form_input-group">
+                <input class = "form_input" type = "password"  placeholder = "Comfirm password" ></input> 
+                <div class ="form_input-error-message"></div>
+               
+            </div>
+            
+            <button class ="form_button" type = "submit">Continue</button>
+
+
+            <p class = "form_text"><a href = "#" class = "form_link" id = "linkLogin">Already have an account? Sign in</a></p>
+
+        </form>
+    </div>
+
+    <script src= "main.js"></script>
+    
+</body>
+</html>
